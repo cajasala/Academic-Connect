@@ -41,7 +41,7 @@ class AssignmentServices extends Services {
     });
 
     print('Upload Assignmnet body : ' + body.toString());
-
+    /*
     final response =
         await http.post(addAssignmentUrl, body: body, headers: headers);
 
@@ -51,6 +51,7 @@ class AssignmentServices extends Services {
     } else {
       print("Assignment adding failed");
     }
+    */
   }
 
   getAssignments(String stdDiv_Global) async {

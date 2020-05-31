@@ -1,4 +1,4 @@
-package com.mappdeveloper.usa.our_e_school;
+package net.motionit.school;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

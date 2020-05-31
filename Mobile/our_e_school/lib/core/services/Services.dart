@@ -11,7 +11,7 @@ class Services {
   SharedPreferencesHelper _sharedPreferencesHelper =
       locator<SharedPreferencesHelper>();
   static String country =
-      "India"; //Get this from firstScreen(UI Not developed yet)
+      "Colombia"; //Get this from firstScreen(UI Not developed yet)
   static FirebaseAuth _auth = FirebaseAuth.instance;
 
   static Firestore _firestore = Firestore.instance;
@@ -39,18 +39,18 @@ class Services {
   String profileUpdateUrl =
       Server.baseUrl + Server.webApi + Server.profileUpdate;
 
-  String getProfileDataUrl =
-      Server.baseUrl + Server.webApi + Server.getProfileData;
+  //String getProfileDataUrl =
+  //    Server.baseUrl + Server.webApi + Server.getProfileData;
 
-  String postAnnouncemnetUrl =
-      Server.baseUrl + Server.webApi + Server.postAnnouncement;
+  //String postAnnouncemnetUrl =
+  //    Server.baseUrl + Server.webApi + Server.postAnnouncement;
 
-  String addAssignmentUrl =
-      Server.baseUrl + Server.webApi + Server.addAssignment;
+  //String addAssignmentUrl =
+  //    Server.baseUrl + Server.webApi + Server.addAssignment;
 
   DocumentReference _schoolRef =
       _firestore.collection('Schools').document(country);
-
+  
   Firestore get firestore => _firestore;
   FirebaseAuth get auth => _auth;
   User get loggedInUser => _user;

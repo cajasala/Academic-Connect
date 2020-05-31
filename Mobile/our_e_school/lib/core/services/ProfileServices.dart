@@ -86,7 +86,7 @@ class ProfileServices extends Services {
     });
 
     print(body);
-
+    /*
     final response = await http.post(
       getProfileDataUrl,
       body: body,
@@ -97,7 +97,7 @@ class ProfileServices extends Services {
       final jsonData = await json.decode(response.body);
 
       User user = User.fromJson(jsonData);
-      sharedPreferencesHelper.setUserDataModel(response.body);
+      sharedPreferencesHelper.f(response.body);
       loggedInUserStream.add(user);
       user.toString();
       return user;
@@ -105,6 +105,8 @@ class ProfileServices extends Services {
       print("Data Retrived failed");
       return User(id: id);
     }
+    */
+    return User(id: id);
   }
 
   //Fetch Profile Data Using Firestore SDK
@@ -182,7 +184,7 @@ class ProfileServices extends Services {
     });
 
     print(body);
-
+    /*
     final response = await http.post(
       getProfileDataUrl,
       body: body,
@@ -199,5 +201,7 @@ class ProfileServices extends Services {
       print("Data Retrived failed");
       return User(id: uid);
     }
+    */
+    return User(id: uid);
   }
 }

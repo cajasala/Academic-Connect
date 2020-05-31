@@ -84,7 +84,7 @@ class AnnouncementServices extends Services {
     });
 
     print(body.toString());
-
+    /*
     final response =
         await http.post(postAnnouncemnetUrl, body: body, headers: headers);
 
@@ -94,5 +94,6 @@ class AnnouncementServices extends Services {
     } else {
       print("Post posting failed");
     }
+    */
   }
 }

@@ -87,6 +87,7 @@ class AuthenticationServices extends Services {
 
     if (!isSchoolPresent) {
       print('School Not Found');
+      print(schoolCode);
       return ReturnType.SCHOOLCODEERROR;
     } else {
       print('School Found');
